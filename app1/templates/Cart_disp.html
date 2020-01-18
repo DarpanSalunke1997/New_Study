@@ -1,0 +1,6 @@
+{% for i in data %}
+    {{ i.prod_name }}
+    {{ i.prod_qty }}
+    {{ i.prod_price }}
+    <a href="{% url 'check' i.id %}">Checkout</a>
+{% endfor %}
